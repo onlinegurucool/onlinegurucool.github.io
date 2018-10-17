@@ -1,0 +1,17 @@
+{% if page.breadcrumbs %}
+  <div class="breadcrumbs">
+    <ul>
+      {% for breadcrumb in page.breadcrumbs %}
+      <li>
+        {% if forloop.last %}
+          {{breadcrumb.title}}
+        {% else %}
+        <a href="{{breadcrumb.link}}">{{breadcrumb.title}}</a>  <i class="fa fa-angle-double-right"></i>
+        {% endif %}
+      </li>
+      {% endfor %}
+    </ul>
+  </div>
+{% else %}
+  <p>Please mention <strong>jekyll object </strong> on top</p>
+{% endif %}

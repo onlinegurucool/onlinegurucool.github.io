@@ -1,0 +1,16 @@
+<div class="social-media">
+  {% if include.heading %}
+  <h2>
+    {{include.heading}}
+  </h2>
+  {% endif %}
+  <ul>
+    {% for data in site.data.api%}
+      {% for media in data.socialMedia %}
+        <li>
+          <a href="{{media.link}}" title="{{media.name}}"><i class="fa fa-{{media.className}}"></i></a>
+        </li>
+      {% endfor %}
+    {% endfor %}
+  </ul>
+</div>

@@ -1,0 +1,12 @@
+<div class="overlay-box {{include.class}}" id='{{include.id}}'>
+  <div class="overlay-bg" onclick="closeOverlay()">
+    <div class="close"></div>
+  </div>
+  <div class="overlay">
+    <div class="container">
+      {% if {{include.title}} %}
+        <header>
+          {{include.title}}
+        </header>
+      {% endif %}
+      <main>

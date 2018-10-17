@@ -1,0 +1,21 @@
+markdown: kramdown
+encoding: utf-8
+baseurl: "https://onlinegurucool.github.io/"
+port: 3030 # port for localhost
+
+sass:
+  sass_dir: styles
+  sourcemap: :true
+  style: compact
+
+exclude: ['_site','static-pages','.sass-cache','design','designs']
+
+# SEO
+domain:
+metadescription:
+metakeyword:
+metaImg:  #this must be 1200x650
+title: "Online GuruCool"
+
+# Tracking
+googleAnalyticsId :  # eg. 'UA-67098409-1' to genrate this code visit on analytics.google.com

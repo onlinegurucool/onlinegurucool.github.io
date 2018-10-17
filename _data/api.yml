@@ -1,0 +1,11 @@
+# Social media configration
+- socialMedia:
+  - name: Facebook
+    link: '#'
+    className: youtube-play
+  - name: Email
+    link: '#'
+    className: envelope
+  - name: Instagram
+    link: '#'
+    className: instagram

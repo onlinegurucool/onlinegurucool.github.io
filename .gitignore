@@ -1,0 +1,7 @@
+/_site
+/design*
+/static-pages
+
+*.DS_Store
+
+/*.sass-cache
