@@ -5,4 +5,5 @@ wrapperClass: landing-page
 title: Home
 ---
 
-<h1>Welcome to Online GuruCool</h1>
+# Welcome to Online GuruCool
+
