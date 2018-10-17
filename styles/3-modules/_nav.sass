@@ -1,13 +1,16 @@
 .nav
-	position: fixed
-	left: -100%
-	top: 0
-	max-width: 400px
-	height: 100vh
-	width: 96%
 	background-color: #fff
-	z-index: 5
-	+transition
+	+mq(max,1439px)
+		position: fixed
+		left: -100%
+		top: 0
+		height: 100vh
+		width: 96%
+		z-index: 5
+		+transition
+		max-width: 250px
+	+mq(min,1440px)
+		width: 250px
 	ul 
 		height: 100%
 		overflow: auto
@@ -34,7 +37,8 @@
 .wrapper
 	&.nav-opened
 		.nav
-			left: 0
+			+mq(max,1439px)
+				left: 0
 		.nav-bg
 			opacity: 1
 			display: block

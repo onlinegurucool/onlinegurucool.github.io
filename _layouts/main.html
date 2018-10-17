@@ -4,7 +4,10 @@ layout: default
 
 {% include header.html %}
   <div class="content-area {{page.contentAreaClass}}">
-    <div class="container">
-      {{ content }}
-    </div>
+    {% include nav.html %}
+    <main class="main-cnt">
+      <div class="container">
+        {{ content }}
+      </div>
+    </main>
   </div>

@@ -11,10 +11,10 @@ sass:
 exclude: ['_site','static-pages','.sass-cache','design','designs']
 
 # SEO
-domain:
-metadescription:
-metakeyword:
-metaImg:  #this must be 1200x650
+domain: "https://onlinegurucool.github.io/"
+metadescription: "Online GuruCool is eLearning platform. Where you can find all tips & tricks about website developement languages such as HTML CSS SASS NodeJS Expressjs MySql etc."
+metakeyword: "YouTube, Online , GuruCool, Tutorials, Sass Tutorial, Hindi Tutorial, web Developement, HTML Tutuorial, tuorials in hindi, reginal language, elearning platform"
+metaImg: "/images/seo.png"  #this must be 1200x650
 title: "Online GuruCool"
 
 # Tracking
