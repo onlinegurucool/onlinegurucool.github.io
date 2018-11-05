@@ -5,9 +5,7 @@ title: Sass (Syntactically Awesome StyleSheets)
 
 
 # SASS
-Sass stands for `(Syntactically Awesome StyleSheets)` 
-
-Sass (Syntactically Awesome Stylesheets) is a style sheet language initially designed by Hampton Catlin and developed by Natalie Weizenbaum in 2016. After its initial versions, Weizenbaum and Chris Eppstein continued to extend Sass with SassScript, a simple scripting language used in Sass files.
+Sass stands for `(Syntactically Awesome StyleSheets)`. A style sheet language initially designed by Hampton Catlin and developed by Natalie Weizenbaum in 2016. After its initial versions, Weizenbaum and Chris Eppstein continued to extend Sass with SassScript, a simple scripting language used in Sass files.
 
 Sass Stable release in March 28, 2016.
 
