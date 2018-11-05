@@ -6,4 +6,3 @@ title: Home
 ---
 
 # Welcome to Online GuruCool
-

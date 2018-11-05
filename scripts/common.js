@@ -15,11 +15,11 @@ function checkElement(element, cb) {
 $(window).on("load", function() {
     // hide loader on page load
     $(".toggle-btn,.nav-bg").on("click", function() {
-        if($('.wrapper').hasClass('nav-opened')){
-			$('.wrapper').removeClass('nav-opened')
-		} else {
-			$('.wrapper').addClass('nav-opened')
-		}
+        if ($(".wrapper").hasClass("nav-opened")) {
+            $(".wrapper").removeClass("nav-opened");
+        } else {
+            $(".wrapper").addClass("nav-opened");
+        }
     });
     hidePageLoader();
 });
