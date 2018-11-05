@@ -37,6 +37,13 @@
 		p 
 			padding-bottom: 0
 
-.sample-class
-	+prefix(border-radius, 20px)
-	+prefix(box-shadow, 20px 10px 20px)
+
+input[type="text"]
+	/* this properties will not apply css for placeholders */
+	font-size: 20px  
+	padding: 10px 20px
+	color: #000
+	+placeholders
+		/* add properties for placeholders */
+		color: red
+		font-style: bold

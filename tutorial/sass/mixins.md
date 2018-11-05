@@ -13,8 +13,6 @@ When we talk about some advance features that we need to use in our project. It 
 
 to repeat webikit,moz,o....etc in each property is very frustrating.
 
-after 3 years frustrations with css, when I were switch to SASS. I have created this.
-
 #### input sass
 
 ```sass
@@ -46,5 +44,75 @@ after 3 years frustrations with css, when I were switch to SASS. I have created 
     -moz-box-shadow: 0 0 20px #000;
     -ms-box-shadow: 0 0 20px #000;
     box-shadow: 0 0 20px #000;
+}
+```
+
+## Placeholders
+
+In moarden design its required to modify styles for placeholder of input box. just include this mixin with your  input. checkout below example. 
+
+### input
+```sass
+/* Define Mixin*/
+=placeholders
+  &::-webkit-input-placeholder
+    @content
+
+  &:-moz-placeholder
+    @content
+
+  &::-moz-placeholder
+    @content
+
+  &:-ms-input-placeholder
+    @content
+
+  &:placeholder
+    @content
+
+/* include mixin*/
+input[type="text"]
+    /* this properties will not apply css for placeholders */
+    font-size: 20px  
+    padding: 10px 20px
+    color: #000
+    +placeholders
+        /* add properties for placeholders */
+        color: red
+        font-style: bold
+``` 
+
+### output
+```css
+input[type="text"] {
+  /* this properties will not apply css for placeholders */
+  font-size: 20px;
+  padding: 10px 20px;
+  color: #000; 
+}
+  input[type="text"]::-webkit-input-placeholder {
+    /* add properties for placeholders */
+    color: red;
+    font-style: bold; 
+}
+  input[type="text"]:-moz-placeholder {
+    /* add properties for placeholders */
+    color: red;
+    font-style: bold;
+}
+  input[type="text"]::-moz-placeholder {
+    /* add properties for placeholders */
+    color: red;
+    font-style: bold;
+}
+  input[type="text"]:-ms-input-placeholder {
+    /* add properties for placeholders */
+    color: red;
+    font-style: bold;
+}
+  input[type="text"]:placeholder {
+    /* add properties for placeholders */
+    color: red;
+    font-style: bold;
 }
 ```
