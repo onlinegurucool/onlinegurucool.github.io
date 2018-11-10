@@ -20,7 +20,7 @@ i am going to use below string <br/>`ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789`  <br/
 ```sql 
 select rand() * 36
 ```
-this short and simple `select query` will give you random number between 1 to 36. then we are going to use this random number as `start_index` in `substring` function.
+This is very short and simple `select query` will give you random number between 1 to 36. then we are going to use this random number as `start_index` in `substring` function.
 
 ```sql 
 select substring(
@@ -61,4 +61,10 @@ select
     )
 ```
 
-<img src="/images/mysql/result.gif" width="400px" />
+When you run above code again and again you will able to see the random code generated.
+
+<img src="/images/mysql/result.gif" width="300px" />
+
+I prefer to use above code in MySQL trigger.
+
+> its on you from where you want use this trick to insert or update referral code.
