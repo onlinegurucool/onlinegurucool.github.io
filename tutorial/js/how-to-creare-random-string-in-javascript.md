@@ -9,9 +9,9 @@ social-share: true
 
 Well this article is inspired by my article on [how to create random string in mysql](/tutorial/mysql/how-to-create-referral-code-in-mysql)
 
-I love to simplify all small things into one function. So i am back with another small function.
+I love to simplify all small things into one function. So i am back with an another one.
 
-Nice **ingredients** make food delicious, same in any language, best use of core function makes your function very useful and efficient.
+Nice **ingredients** make food delicious, same in any language, best use of core functions will make your function useful and efficient.
 
 **Ingredients**
 
@@ -26,7 +26,7 @@ generate one random string between 1 to n number.
 
 ```javascript
 var length = 8;
-Math.floor(Math.random() * string.length) + 1;
+Math.floor(Math.random() * length) + 1;
 // this will return random number between 1 to 8
 ```
 
