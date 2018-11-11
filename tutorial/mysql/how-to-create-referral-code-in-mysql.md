@@ -1,6 +1,7 @@
 ---
 layout: main
 title: how to create referral code in MySQL
+social-share: true
 ---
 
 # how to create referral code in MySQL
@@ -10,28 +11,33 @@ it is very simple trick to get this done. i am using `substring()`,`concat()`, a
 ```sql
 select substring("online gurucool",3,4);
 ```
+
 as per above example this will return `line` word from that string.
 
 <img src="/images/mysql/line-result.png" />
 
-## Don't waste much time let's start with trick. 
-i am going to use below string <br/>`ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789`  <br/> for this method.
+## Don't waste much time let's start with trick.
 
-```sql 
+i am going to use below string <br/>`ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789` <br/> for this method.
+
+```sql
 select rand() * 36
 ```
+
 This is very short and simple `select query` will give you random number between 1 to 36. then we are going to use this random number as `start_index` in `substring` function.
 
-```sql 
+```sql
 select substring(
     'ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789',
     ROUND(rand() * 36),1
 )
 ```
-After trickly merging both function as this will return you single random word from above string on every time when you run this query. 
+
+After trickly merging both function as this will return you single random word from above string on every time when you run this query.
 
 finally we use same function in `concat()` function and create one random string.
-```sql 
+
+```sql
 select
     CONCAT(
         substring(
@@ -65,6 +71,6 @@ When you run above code again and again you will able to see the random code gen
 
 <img src="/images/mysql/result.gif" width="300px" />
 
-I prefer to use above code in MySQL trigger.
-
 > its on you from where you want use this trick to insert or update referral code.
+
+{% include fb-comments.html href="https://www.facebook.com/onlinegurucool" %}

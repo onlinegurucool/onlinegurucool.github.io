@@ -8,6 +8,13 @@ layout: default
     <main class="main-cnt">
       <div class="container">
         {{ content }}
+        {% if page.social-share %}
+        <div class="social-share-box">
+          <h4 class="">Share<br> on</h4>
+          <div id="shareSocial" class="social-share"></div>
+        </div>
+        <div class="clear-40"></div>
+        {% endif %}
       </div>
     </main>
   </div>

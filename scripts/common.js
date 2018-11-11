@@ -21,5 +21,10 @@ $(window).on("load", function() {
             $(".wrapper").addClass("nav-opened");
         }
     });
+    checkElement($('#shareSocial'),function(){
+        $("#shareSocial").jsSocials({
+            shares: ["email", "twitter", "facebook", "whatsapp"]
+        });
+    })
     hidePageLoader();
 });
