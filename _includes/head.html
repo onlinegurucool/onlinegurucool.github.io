@@ -5,14 +5,14 @@
 
   <!-- Meta tags for SEO -->
   <meta name="description" content="" />
-  <meta name="keywords" content="" />
+  <meta name="keywords" content="{% if page.keyword %}{{page.keyword}}{% endif %}, html, css, online tutorial, online guru cool, gurucool,og tutorial,tips, website tricks, html tricks,css tricks,ui tricks" />
 
   <!-- Meta for facebook -->
   <meta property='og:title' content='{% if page.title %} {{site.title}} : {{page.title}}{% else %}{{site.title}} : {{site.title}}{% endif%}'
   />
   <meta property='og:url' content='{{site.domain}}{{page.url}}' />
   <meta property='og:type' content='website' />
-  <meta property='og:image' content='{% if page.metaImg %}{{site.domain}}/{{page.metaImg}}{% else %}{{site.domain}}/{{site.metaImg}}{% endif%}'
+  <meta property='og:image' content='{% if page.metaImg %}{{site.domain}}{{page.metaImg}}{% else %}{{site.domain}}{{site.metaImg}}{% endif%}'
   />
   <meta property='og:site_name' content='{{site.title}}' />
   <meta property='og:description' content='{% if page.metadescription %} {{ page.metadescription }} {% else %} {{site.metadescription}} {% endif%}'
