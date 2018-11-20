@@ -2,6 +2,7 @@
 layout: main
 title: How to check record before insert in one query
 social-share: true
+share-url: "https://www.facebook.com/onlinegurucool/posts/2157609254259368"
 metaImg: "/images/mysql/how-to-check-record-before-insert-in-one-query.png"
 keyword: "how, to , check, record, before insert, in one query, coalesce function, trick coalesce"
 ---
@@ -135,5 +136,3 @@ This only one query will check and then perform insert call.
 > This query will not gives an error for duplicate record.
 
 > I have used this query for activity log, insert daily points based on condition etc. 
-
-{% include fb-comments.html href="https://www.facebook.com/onlinegurucool" %}

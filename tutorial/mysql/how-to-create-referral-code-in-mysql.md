@@ -2,6 +2,7 @@
 layout: main
 title: how to create referral code in MySQL
 social-share: true
+share-url: "https://www.facebook.com/onlinegurucool/posts/2144475072239453
 ---
 
 # how to create referral code in MySQL
@@ -72,5 +73,3 @@ When you run above code again and again you will able to see the random code gen
 <img src="/images/mysql/result.gif" width="300px" />
 
 > its on you from where you want use this trick to insert or update referral code.
-
-{% include fb-comments.html href="https://www.facebook.com/onlinegurucool" %}

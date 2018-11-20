@@ -9,6 +9,7 @@ layout: default
       <div class="container">
         {{ content }}
         {% if page.social-share %}
+        {% include fb-comments.html href=page.share-url %}
         <div class="social-share-box">
           <h4 class="">Share<br> on</h4>
           <div id="shareSocial" class="social-share"></div>
